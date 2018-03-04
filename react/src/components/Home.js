@@ -1,46 +1,20 @@
-import React, { Component } from 'react';
-import withAuthentication from './withAuthentication';
+import React from 'react';
+import PropTypes from 'prop-types';
 import withAuthorization from './withAuthorization';
-import { db } from '../firebase';
-import {firebase} from '../firebase';
 
-class HomePage extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      users: null,
-    };
-  }
-
-  componentDidMount() {
-    db.onceGetUsers().then(snapshot =>
-      this.setState(() => ({ users: snapshot.val() }))
-    );
-  }
+const AccPage = (props, { authUser }) =>
+<div>
+  <h2>Welcome, {authUser.email}</h2>
   
-  render() {
-    const { users } = this.state;
+    </div>
 
-    return (
-      
-      <div>
-        <p>Hello .</p>
-        { !!users && <UserList users={users} /> }
-      </div>
-    );
-  }
-}
-const UserList = ({ users }) =>
-  <div>
-    <h2>List of Usernames of Users</h2>
-    <p>(Saved on Sign Up in Firebase Database)</p>
 
-    {Object.keys(users).map(key =>
-      <div key={key}>{users[key].username}</div>
-    )}
-  </div>
+
+AccPage.contextTypes = {
+authUser: PropTypes.object,
+};
 
 const authCondition = (authUser) => !!authUser;
 
-export default withAuthorization(authCondition)(HomePage);
+
+export default withAuthorization(authCondition)(AccPage);
