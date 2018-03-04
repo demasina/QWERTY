@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="img/logo.png" alt="">
+                        <h1>STRICT</h1>
+                    </div>
+                    <div class="menu col-md-offset-6 col-md-4">
+                        <ul>
+                            <a href="#to"><li>HOME</li></a>
+                            <a href="#design"><li>DESIGN</li></a>
+                            <a href="#porti"><li>PORTFOLIO</li></a>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headBlock rellax" data-rellax-speed="-2" id="to">
+            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <h1>STRICT</h1>
+                            <p>STRICT is a responsive theme with a clean and minimal look</p>
+                            <div id="root"></div>
+                            <!-- <div class="reg col-md-12 col-xs-12">
+                                
+                                
+                                        <div class="col-md-offset-1 col-md-5 col-xs-offset-1 col-xs-4" id="register_form">
+                                            <h2>REGISTRATION</h2>
+                                            <form oninput="cor.value=!!pas2.value&&(pas1.value==pas2.value)?'Correct!':'Incorrect!'">
+                                                <input type="email" placeholder="e-mail" id="register_login" required>
+                                                <input type="password" name="pas1" placeholder="password" id="register_password" value="" required>
+                                                <input type="password" name="pas2" placeholder="confirm password" id="register_confirmation" value="" required>
+                                                <output name="cor"></output>
+                                            </form>
+                                            <button id="register" onclick="register()">Sign up</button>
+                                        </div>
+                                
+                                
+                                
+                                    <div class="col-md-offset-1 col-md-4 col-xs-offset-1 col-xs-4" id="auth_form">
+                                        <h2>AUTHENTICATION</h2>
+                                        <input type="email" placeholder="e-mail" id="auth_login">
+                                        <input type="password" placeholder="password" id="auth_password">
+                                        <button id="auth" onclick="auth()">SIGN IN</button>
+                                    </div>
+                                
+                                <div id="user_form" class="loggedin">
+                                    <p id="user_log">You're currently logged in.</p>
+                                    <button onclick="EXIT()" id="exitBut">EXIT</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <section class="content rellax" data-rellax-speed="2" id="design">
+        <div class="container">
+            <div class="row">
+                <div class="contentOne col-md-6" id="leftCont">
+                    <h1>Simple & pure design</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam necessitatibus consequuntur reiciendis ad quos dicta porro nobis facere, provident cumque fugiat nostrum et perferendis, delectus velit voluptatibus minus soluta quia?
+                    Praesentium necessitatibus ex aut, quisquam veritatis, maiores tenetur corrupti, cum ducimus deserunt provident excepturi quae consequatur esse dolore nobis aspernatur cumque debitis delectus illo iusto! Perferendis soluta perspiciatis sint facilis.
+                    Officiis accusantium quibusdam consequatur accusamus, incidunt odit voluptatum, aliquam suscipit sunt quaerat modi tenetur? Excepturi, placeat quae explicabo nobis sapiente quisquam a debitis praesentium ipsum fugiat harum tenetur perspiciatis voluptates.
+                    Modi quae ducimus doloremque nulla laborum in aliquid ipsum! Maxime assumenda deserunt ea vero nobis necessitatibus dolorum esse dignissimos odio, quae facere reprehenderit quibusdam veniam repellendus molestias expedita ut consequatur!
+                    Nihil odio ipsum inventore debitis illum pariatur, quaerat numquam possimus quas. Nulla, fuga nisi. Magni deleniti quasi consequuntur officiis quaerat, iste dicta et dolor facere soluta expedita id hic eum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente placeat soluta sequi iusto dicta dolores, dolorum ullam neque praesentium deserunt quaerat voluptatibus commodi dolorem veritatis asperiores? Blanditiis quibusdam necessitatibus earum?Vero, eum beatae suscipit nostrum quidem mollitia voluptate quibusdam necessitatibus maxime nisi doloremque fugiat corporis iure nulla atque eaque voluptatem molestias veniam hic facere porro? Commodi nisi accusamus quibusdam veritatis!</p>
+                </div>
+                <!-- <h2 id="access" class="col-md-offset-2 col-md-4">Login to access the menu</h2> -->
+                <div class="sidebar col-md-offset-2 col-md-4" id="rightCont"> 
+                    
+                <div class="side">
+                        <p>MENU</p>
+                    <div id="nav-icon1">
+                        <span></span>
+                        <span></span>
+                    </div>
+                <div class="sideCont">
+                    <form class="fontSize"> 
+                        <label for="fontsStyle">Выберите размер шрифта (от 8 до 24 px)</label>
+                        <input type="text" id="fontSize" value="18">
+                          <input type="button" id="sizeBut" value="Применить">
+                          <p class="invalid" id="inv">некорректные данные</p>
+                    </form>
+                    <form class="fontStyleCont">
+                        <label for="fontStyleit">Выберите шрифт</label>
+                        <select onchange="fontsStyle(this);" id="fontStyleit">
+                            <option>Times New Roman</option>
+                            <option>Comic Sans MS</option>
+                            <option>Arial</option>
+                            <option>Courier New</option>
+                            <option>Impact</option>
+                        </select>
+                    </form>    
+                    <form class="backColCont">
+                        <label for="backColor">Выберите цвет фона</label>
+                        <select onchange="changeBackground()" id="backColor">
+                            <option value="#FFFFFF">Белый</option>
+                            <option value="#666666">Серый</option>
+                            <option value="#BA55D3">Фиолетовый</option>
+                            <option value="#00BFFF">Синий</option>
+                            <option value="#FF0000">Красный</option>
+                            <option value="#008000">Зеленый</option>
+                            <option value="#FFFF00">Желтый</option>
+                        </select>
+                    </form>
+                    <form>
+                        <label>Удалить последний абзац</label>
+                         <input type="button" id="deleteText" value="Удалить">
+                     </form>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+      
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-4" id="devices">
+                        <div id="phones">
+                            <img src="img/phone.jpg" alt="">
+                            <h2>Optimized for all devices</h2>
+                            <p>STRICT has been designed to be fully 
+                                responsive on all devices</p>
+                        </div>
+                    </div>
+                    <div class="animated col-md-4" id="devices">
+                        <div id="designs">
+                            <img src="img/fordesign.jpg" alt="">
+                            <h2>Clean & Minimal Design</h2>
+                            <p>This multipurpose theme is especially created 
+                                    to be used for different projects.</p>
+                        </div>
+                    </div>
+                    <div class="animated col-md-4" id="devices">
+                        <div id="fonts">
+                            <img src="img/fonts.jpg" alt="">
+                            <h2>Font Awesome Icon</h2>
+                            <p>This multipurpose theme is especially created 
+                                    to be used for different projects.</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="porti">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Showcase your work like a pro.</h1>
+                    <p>Contact me if you like my work</p>
+                    <div class="col1 col-md-4">
+                        <img src="img/work1.jpg" alt="">
+                        <div class="port">
+                            <h2>INFO</h2>
+                            <a href="#work_1" class="popup-content">See</a>
+                        </div>
+                        <div class="hidden-descr">
+                                <div class="descr" id="work_1">
+                                    <h3>ProjectName</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae minus earum quisquam quia eaque assumenda sequi? Voluptas mollitia molestiae, unde quidem dolorem, non iusto aut ea nam perferendis fugiat!</p>
+                                    <img src="img/work1.jpg" alt="">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col2 col-md-4">
+                        <img src="img/work2.jpg" alt="">
+                        <div class="port">
+                                <h2>INFO</h2>
+                                <a href="#work_2" class="popup-content">See</a>
+                        </div>
+                        <div class="hidden-descr">
+                                <div class="descr" id="work_2">
+                                    <h3>ProjectName</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae minus earum quisquam quia eaque assumenda sequi? Voluptas mollitia molestiae, unde quidem dolorem, non iusto aut ea nam perferendis fugiat!</p>
+                                    <img src="img/work2.jpg" alt="">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col3 col-md-4">
+                        <img src="img/work3.jpg" alt="">
+                        <div class="port">
+                                <h2>INFO</h2>
+                                <a href="#work_3" class="popup-content">See</a>
+                        </div>
+                        <div class="hidden-descr">
+                                <div class="descr" id="work_3">
+                                    <h3>ProjectName</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae minus earum quisquam quia eaque assumenda sequi? Voluptas mollitia molestiae, unde quidem dolorem, non iusto aut ea nam perferendis fugiat!</p>
+                                    <img src="img/work3.jpg" alt="">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="footer col-md-12">
+            <ul>
+                <a href="#"><li style="padding-left: 0;">Home</li></a>
+                <a href="#"><li>About Us</li></a>
+                <a href="#"><li>Portfolio</li></a>
+                <a href="#"><li>Services</li></a>
+                <a href="#"><li>Blog</li></a>
+                <a href="#"><li style="border-right: none;">Contact Us</li></a>
+            </ul>
+            <h3>©2010 CreativeStudio. All Rights Reserved</h3>
+    </div>
+
+    <script src="js/jquery-3.1.1.js"></script>
+    
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+
+    <script src="js/rellax.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
