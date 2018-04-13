@@ -1,4 +1,4 @@
-# Qwerty
+# React registration
 Task 4.
 Open project.
 Enter in console:
